@@ -1,0 +1,14 @@
+﻿Build started 10.11.2015 23:56:11.
+     1>Project "c:\Users\Кома\documents\visual studio 2013\Projects\Bresenham_circle\Bresenham_circle\Bresenham_circle.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D BRESENHAM_CIRCLE_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Bresenham_circle.cpp
+         Bresenham_circle.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\кома\documents\visual studio 2013\Projects\Bresenham_circle\Debug\Bresenham_circle.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\кома\documents\visual studio 2013\Projects\Bresenham_circle\Debug\Bresenham_circle.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\кома\documents\visual studio 2013\Projects\Bresenham_circle\Debug\Bresenham_circle.lib" /MACHINE:X86 /DLL Debug\Bresenham_circle.obj
+            Creating library c:\users\ъюьр\documents\visual studio 2013\Projects\Bresenham_circle\Debug\Bresenham_circle.lib and object c:\users\ъюьр\documents\visual studio 2013\Projects\Bresenham_circle\Debug\Bresenham_circle.exp
+         Bresenham_circle.vcxproj -> c:\users\кома\documents\visual studio 2013\Projects\Bresenham_circle\Debug\Bresenham_circle.dll
+     1>Done Building Project "c:\Users\Кома\documents\visual studio 2013\Projects\Bresenham_circle\Bresenham_circle\Bresenham_circle.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.36

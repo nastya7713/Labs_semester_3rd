@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bresenham_circle", "Bresenham_circle\Bresenham_circle.vcxproj", "{F190CC29-AE63-47A8-99F5-D8655B555DC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F190CC29-AE63-47A8-99F5-D8655B555DC0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F190CC29-AE63-47A8-99F5-D8655B555DC0}.Debug|Win32.Build.0 = Debug|Win32
+		{F190CC29-AE63-47A8-99F5-D8655B555DC0}.Release|Win32.ActiveCfg = Release|Win32
+		{F190CC29-AE63-47A8-99F5-D8655B555DC0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
