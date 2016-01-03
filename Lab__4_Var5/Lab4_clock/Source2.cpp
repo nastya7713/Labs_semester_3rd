@@ -1,6 +1,6 @@
 #include "DrawFunc.h"
 
-char title[] = "3D Shapes";
+char windowTitle[] = "Clock";
 float RotateX = 0;
 float RotateY = 0;
 float depth = -5.5;
@@ -33,8 +33,8 @@ void initGL() {
 	}
 
 	glEnable(GL_TEXTURE_2D);
-	glClearColor(0.8f, 0.7f, 0.6f, 1.0f); // set background color 
-	glClearDepth(1.0f);                   // set background depth to farthest
+	glClearColor(0.8f, 0.7f, 0.6f, 1.0f); // sets background color 
+	glClearDepth(1.0f);                   // sets background depth to farthest
 	glEnable(GL_DEPTH_TEST);   
 	glDepthFunc(GL_LEQUAL);   
 	glShadeModel(GL_SMOOTH);  
@@ -113,17 +113,12 @@ void display() {
 	
 }
 
-void reshape(GLsizei width, GLsizei height)//options required for reshaping
-{  
-	if (height == 0) height = 1;                
-	GLfloat aspect = (GLfloat)width / (GLfloat)height;
-
+void reshapeFunc(GLsizei width, GLsizei height)//options required for reshaping
+{                
 	glViewport(0, 0, width, height);
-
 	glMatrixMode(GL_PROJECTION);  
 	glLoadIdentity();            
-	
-	gluPerspective(45.0f, aspect, 0.1f, 100.0f);
+	gluPerspective(60.0f, (GLfloat)width / (GLfloat)height, 0.1f, 80.0f);
 }
 
 void SpecialKeys(int key, int x, int y)//keys needed to rotate clock
@@ -177,21 +172,20 @@ void keyboardPress(unsigned char key, int x, int y)//keys needed to close window
 	default:
 		break;
 	}
-	glutPostRedisplay();
+	glutPostRedisplay(); //marks the current window as needing to be redisplayed
 }
 int main(int argc, char** argv) {
-	glutInit(&argc, argv);        
-
-	glutInitDisplayMode(GLUT_DOUBLE); 
-	glutInitWindowSize(640, 480);   
-	glutInitWindowPosition(50, 50); 
-	glutCreateWindow(title);  
-	glutDisplayFunc(display);       
-	glutReshapeFunc(reshape);     
-	glutIdleFunc(IdleFunc);
-	glutKeyboardFunc(keyboardPress);
-	glutSpecialFunc(SpecialKeys);
-	initGL();                     
+	glutInit(&argc, argv);//initializes glut      
+	glutInitDisplayMode(GLUT_DOUBLE);// sets the initial display mode.
+	glutInitWindowSize(640, 480);//sets window size using given parametrs
+	glutInitWindowPosition(50, 50);//sets window position
+	glutCreateWindow(windowTitle);//creates window with given title
+	glutDisplayFunc(display);//sets the display callback for the current window  
+	glutReshapeFunc(reshapeFunc);//sets the reshape callback for the current window  
+	glutIdleFunc(IdleFunc);//sets the global idle callback
+	glutKeyboardFunc(keyboardPress);//keyboard keys processing
+	glutSpecialFunc(SpecialKeys);//processing other keys
+	initGL();                 
 	glutMainLoop();                 
 	return 0;
 }
